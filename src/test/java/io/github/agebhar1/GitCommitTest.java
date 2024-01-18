@@ -24,7 +24,7 @@ public class GitCommitTest {
     }
 
     @Test
-    public void test() {
+    public void testGitCommitIdDescribe() {
         properties.forEach((key, value) -> System.out.printf(">> %s=%s%n", key, value));
 
         var gitCommitIdDescribe = properties.getOrDefault("git.commit.id.describe", "unknown-git-rev").toString();
