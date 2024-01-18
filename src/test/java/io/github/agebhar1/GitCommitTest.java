@@ -12,15 +12,15 @@ public class GitCommitTest {
     private static final Properties properties = new Properties();
 
     static {
-        try {
-            var resource = GitCommitTest.class.getResource("/git.properties");
-            if (resource != null) {
-                try (var stream = resource.openStream()) {
-                    properties.load(stream);
-                }
-            }
-        } catch (IOException ignore) {
-        }
+//        try {
+//            var resource = GitCommitTest.class.getResource("/git.properties");
+//            if (resource != null) {
+//                try (var stream = resource.openStream()) {
+//                    properties.load(stream);
+//                }
+//            }
+//        } catch (IOException ignore) {
+//        }
     }
 
     @Test
