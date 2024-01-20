@@ -15,4 +15,7 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
           cache: 'maven'
+      - run: |
+          git describe --tags --always
+          git log --oneline
       - run: mvn --batch-mode --no-transfer-progress --errors --update-snapshots clean package -Drevision=$(git describe --tags --always)
